@@ -1,0 +1,92 @@
+.product {
+  margin-bottom: 36px;
+  .product_left {
+    margin-bottom: 25px;
+    img {
+      max-width: 100%;
+    }
+  }
+  .product_right {
+    .fresh_organic {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      h2 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 123.426%;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        text-align: center;
+      }
+    }
+  }
+
+  .fresh_organic_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 26px;
+    .health_secrets {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+
+      p {
+        text-align: start;
+      }
+      .flowers_icon {
+        img {
+          max-width: 52px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 884px) {
+  .product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 25px;
+    margin-bottom: 80px;
+    .product_left {
+      img {
+        height: 100%;
+      }
+    }
+    .product_right {
+      .fresh_organic {
+        justify-content: start;
+        h2 {
+          font-size: 50px;
+          text-align: start;
+        }
+        p {
+          text-align: start;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .product {
+    align-items: center;
+    gap: 53px;
+    .product_right {
+      .fresh_organic {
+        align-items: start;
+      }
+    }
+    .fresh_organic_bottom {
+      gap: 50px;
+      margin-top: 50px;
+    }
+  }
+}

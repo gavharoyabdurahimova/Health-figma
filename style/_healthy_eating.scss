@@ -1,0 +1,90 @@
+.healthy_eating {
+  background-color: #f4f4f4;
+  padding: 64px 32px 56px 32px;
+  border-radius: 12px;
+  .information_fruits_img {
+    img {
+      display: none;
+    }
+  }
+
+  .information_about_fruits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 41px;
+    .fruits_info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 41px;
+    }
+
+    h2 {
+      color: #2b2b2b;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 118.388%;
+    }
+
+    .fruit_about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      p {
+        color: #2a2a2a;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 884px) {
+  .healthy_eating {
+    .information_about_fruits {
+      padding: 56px 110px;
+      margin-bottom: 80px;
+      h2 {
+        font-size: 50px;
+      }
+      .fruits_info {
+        flex-direction: row;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1340px) {
+  .healthy_eating {
+    display: flex;
+    align-items: center;
+    gap: 87px;
+    padding: 56px 110px;
+    margin-bottom: 104px;
+    .information_fruits_img {
+      img {
+        display: block;
+        max-width: 349px;
+      }
+    }
+    .information_about_fruits {
+      margin-bottom: 0;
+      align-items: start;
+      padding: 0;
+      .fruit_about {
+        align-items: start;
+        p {
+          text-align: start;
+          max-width: 237px;
+        }
+      }
+      .fruits_info {
+        gap: 69px;
+      }
+    }
+  }
+}
